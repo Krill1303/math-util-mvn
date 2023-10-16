@@ -16,12 +16,13 @@ public class MathUtilityTest {
 
     @Test //dính dáng đén framwwork 
     public void verifyFactorialGivenRightArgument0ReturnsOk() {
+        assertEquals(1, MathUtility.getFactorial(0));
 
     }
 
     @Test
     public void testFactorialGivenRightArgument0ReturnsWell() {
-        assertEquals(1, MathUtility.getFactorial(0));
+        assertEquals(1, MathUtility.getFactorial(1));
     }
 
     @Test
